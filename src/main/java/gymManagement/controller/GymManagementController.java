@@ -1,0 +1,16 @@
+package gymManagement.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+
+
+@RestController
+public class GymManagementController {
+	
+	@RequestMapping(value="/", method=RequestMethod.GET)
+    public String testStringMethod() {
+		return "Test";
+	}
+}
